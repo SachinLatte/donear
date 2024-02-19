@@ -1,0 +1,45 @@
+/*@Media Query Mixin*/
+@mixin mQ($arg...){
+	@if length($arg) == 1{
+		@media screen and (max-width:$arg){
+			@content;
+		}
+	}
+	@if length($arg) == 2{
+		@media screen and(max-width:nth($arg, 1)) and (min-width:nth($arg, 2)){
+			@content;
+		}
+	}
+}
+/*@Media Query Mixin End*/
+
+@mixin home_banner_heading{
+	font-family: $font;
+	font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    color: $secondary_color;
+}
+@mixin common_heading{
+	font-family: $font;
+	font-size: 26px;
+    font-weight: 500;
+    line-height: 50px;
+    color: $primary_color;
+    position: relative;
+    text-align: center;
+      @include mQ(480px){
+    font-size:22px;
+  }
+     @include mQ(375px){
+    font-size:22px;
+  }
+}
+
+@mixin common_paragraph{
+	font-size: 16px;
+	line-height: 30px;
+	 @include mQ(480px){
+    font-size:14px;
+  }
+}

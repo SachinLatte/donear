@@ -1,0 +1,53 @@
+
+/* @group global reset */
+html, body { padding:0; margin:0; height:100%;}
+h1, h2, h3, h4, h5, h6, fieldset, dd, button, form, ul, ul li, ol, ol li, dl, p, input, button, label, td, abbr, article, aside, audio, bb, canvas, datagrid, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video, blockquote, address { margin: 0; padding: 0; }
+sup { vertical-align:top; line-height:1; }
+ul li, ol li, menu li { list-style-type: none; }
+fieldset, dd, button, form, img, a img, iframe { border: none; }
+table { border-spacing:0;  *border-collapse:collapse; width:100%; }
+header, footer, nav, menu, section, aside, article, details, summary, address { display:block; zoom:1; }
+a:hover, a:active, a:focus, input:active, textarea:active, input:focus, textarea:focus{  outline:0; }
+/* @end */
+
+/* @group Default Element Styles */
+html, body { padding:0; margin:0; height:100%; }
+body{
+	color:#fff;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3{
+	color:#ffecc7;
+	text-transform:uppercase;
+	font-weight:normal;
+}
+
+.custom_container{
+	width: 75%;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+	cursor:pointer;
+	outline:0;
+}
+a:hover { text-decoration:none;}
+/* @end */
+
+/* @group Clearfix */
+.clearfix { zoom: 1; }
+.clearfix:after {
+	clear:both;
+	content:'.';
+	display:block;
+	visibility:hidden;
+	height:0;
+	font-size: 0;
+}
+.desk-none {display: none;}
+.pdgleft{text-align: center;}
+.clearfix { display:block; }
+* html .clearfix { height:1%; }
+*+html .clearfix { display:inline-block; }
+/* @end */
